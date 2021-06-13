@@ -27,6 +27,15 @@ a {
     }
 }
 
+a.light {
+    @include transition-all;
+    color: white;
+    &:hover,
+    &:focus {
+        color: darken($theme-primary, 10%);
+    }
+}
+
 h1,
 h2,
 h3,
